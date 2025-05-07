@@ -27,4 +27,8 @@ object BuyableManager {
         return buyableItems[category] ?: emptyList()
     }
 
+    fun clearCategory(category: BuyableCategory) {
+        buyableItems[category]?.clear()
+    }
+
 }
