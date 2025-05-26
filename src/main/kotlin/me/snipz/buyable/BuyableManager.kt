@@ -5,7 +5,7 @@ import org.bukkit.entity.Player
 interface BuyableItem {
     val id: String
 
-    fun purchase(player: Player)
+    suspend fun purchase(player: Player)
     fun isAvailable(player: Player): Boolean
 }
 
